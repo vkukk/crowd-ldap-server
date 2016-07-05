@@ -518,7 +518,7 @@ public class CrowdPartition implements Partition {
               userName = NullRestrictionImpl.INSTANCE;
               
           } else {
-              userName = new TermRestriction<String>(UserTermKeys.USERNAME, MatchMode.CONTAINS, uid);
+              userName = new TermRestriction<String>(UserTermKeys.USERNAME, MatchMode.EXACTLY_MATCHES, uid);
           }
           List<String> list = m_CrowdClient.searchUserNames(userName, 0, Integer.MAX_VALUE);
           for (String gn : list) {

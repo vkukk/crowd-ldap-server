@@ -35,7 +35,7 @@ fi
 if [ -n "${SSL_PASSWORD+1}" ]; then
   SSL="-Dssl.certificate.password=$SSL_PASSWORD $SSL"
 fi
-if [[ "${SSL_DEBUG}" == "true" ]]; then
+if [ "${SSL_DEBUG}" = "true" ]; then
   SSL="-Djavax.net.debug=ssl $SSL"
 fi
 

@@ -1,5 +1,4 @@
-FROM maven:3.2-jdk-7-onbuild
-VOLUME /usr/src/app/etc
+FROM maven:3-jdk-8-onbuild
 WORKDIR /usr/src/app
 
 # Defaults that work with 

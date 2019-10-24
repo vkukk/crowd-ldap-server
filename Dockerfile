@@ -1,8 +1,7 @@
 FROM maven:3-jdk-8-onbuild
 WORKDIR /usr/src/app
 
-# Defaults that work with 
-# https://registry.hub.docker.com/u/durdn/atlassian-crowd/dockerfile/
+# ENV defaults
 ENV CROWD_APP_NAME crowd-ldap-server
 ENV CROWD_APP_PW crowd-ldap-server
 ENV CROWD_APP_URL http://crowd:8095/
